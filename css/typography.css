@@ -1,0 +1,29 @@
+.title {
+    font-family: "Rancho";
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.75rem;
+}
+
+.title, .subtitle {
+    color: #fff;
+}
+
+a,
+small {
+    font-family: "Josefin Sans", system-ui;
+    color: #fff;
+}
+
+a {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+small {
+    font-size: 1.15rem;
+    font-weight: 300;
+}
