@@ -3,27 +3,56 @@
     font-size: 3rem;
 }
 
-.subtitle {
+.subtitle, span, h3 {
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.75rem;
+}
+
+h4{
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.65rem;
 }
 
 .title, .subtitle {
     color: #fff;
 }
 
+h3 {
+    text-decoration: underline 2px;
+}
+
 a,
-small {
+small,p {
     font-family: "Josefin Sans", system-ui;
-    color: #fff;
+    
 }
 
 a {
-    font-size: 1.3rem;
+    font-size: 1.75rem;
     text-decoration: none;
+    color: #000;
+}
+
+a.link {
+    color: #fff;
 }
 
 small {
-    font-size: 1.15rem;
+    font-size: 1.45rem;
     font-weight: 300;
+    color: #fff;
+}
+
+span {
+    font-weight: 300;
+    font-size: 1.15rem;
+    text-decoration: underline #0c0c0c;
+}
+
+.inseguro {
+    font-size: 1.55rem;
+}
+
+p {
+    font-size: 1.35rem;
 }
