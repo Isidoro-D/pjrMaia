@@ -14,7 +14,7 @@ body {
 
 div.main_bg {
     position: absolute;
-    background-image: url(../img/bg-main.png);
+    background-image: url(../assets/img/bg-main.png);
     width: 100vw;
     height: 87vh;
     filter: blur(4px);
