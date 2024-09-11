@@ -1,4 +1,6 @@
+/* ------------------------------------ */
 /* ---------- RESETS GERAIS ---------- */
+/* ---------------------------------- */
 
 :root {
     --bordo: #45000eee;
@@ -14,7 +16,7 @@
 body {
     max-width: 100vw;
     height: 100%;
-    background-image: linear-gradient(110deg, #FFB3C1, #f16e86, #fc6782, #f74061, #C9184A, #A4133C, #800F2F, #590d22);
+    background-image: linear-gradient(90deg, #FFB3C1, #f16e86, #fc6782, #f74061, #C9184A, #A4133C, #800F2F, #590d22);
     background-size: 150% 100%;
     animation: bg-animated 5s infinite alternate-reverse;
     position: relative;
@@ -62,7 +64,9 @@ a.back img {
     width: 50%;
 }
 
+/* --------------------------------------- */
 /* ---------- SECTION PCR KIDS ---------- */
+/* ------------------------------------- */
 
 div.kid {
     display: grid;
@@ -116,7 +120,9 @@ div.divisor {
     align-items: center;
 }
 
+/* ---------------------------------- */
 /* ---------- SECTION SAFE ---------- */
+/* ---------------------------------- */
 
 div.divisor_line {
     border-top: 2px solid var(--bordo);
@@ -125,7 +131,7 @@ div.divisor_line {
 }
 
 img.estimulos {
-    width: 40%;
+    width: 60%;
 }
 
 img.verificationBreath,
@@ -156,4 +162,35 @@ a.video {
 
 a.video img {
     width: 6%;
+}
+
+div.pcrBaby {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+div.pcrBaby img {
+    width: 40%;
+}
+
+/* ---------------------------------- */
+/* ---------- SECTION DEA ---------- */
+/* ---------------------------------- */
+
+section.dea {
+    width: 70%;
+}
+
+div.guidance {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 4%;
+    line-height: 70px;
+}
+
+section.dea div.container img {
+    width: 70%;
 }

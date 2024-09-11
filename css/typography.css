@@ -1,6 +1,7 @@
 .title {
     font-family: "Rancho";
     font-size: 3rem;
+    text-align: center
 }
 
 .subtitle, span, h3 {
@@ -22,7 +23,7 @@ h3 {
 }
 
 a,
-small,p {
+small,p, li{
     font-family: "Josefin Sans", system-ui;
     
 }
@@ -55,4 +56,12 @@ span {
 
 p {
     font-size: 1.35rem;
+}
+
+ul {
+    list-style: url(../assets/icons/divisa-direita.png);
+}
+
+li {
+    font-size: 1.5rem;
 }
