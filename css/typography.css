@@ -1,17 +1,20 @@
 .title {
     font-family: "Rancho";
     font-size: 3rem;
-    text-align: center
+    text-align: center;
+    color: #fff;
 }
 
 .subtitle, span, h3 {
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.75rem;
+    color: #fff;
 }
 
 h4{
     font-family: "Libre Franklin", sans-serif;
     font-size: 1.65rem;
+    color: #fff;
 }
 
 .title, .subtitle {
@@ -20,18 +23,19 @@ h4{
 
 h3 {
     text-decoration: underline 2px;
+    color: #fff;
 }
 
 a,
 small,p, li{
     font-family: "Josefin Sans", system-ui;
-    
+    color: #fff;
 }
 
 a {
     font-size: 1.75rem;
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 a.link {
@@ -47,7 +51,7 @@ small {
 span {
     font-weight: 300;
     font-size: 1.15rem;
-    text-decoration: underline #0c0c0c;
+    text-decoration: underline #fff;
 }
 
 .inseguro {
@@ -55,13 +59,19 @@ span {
 }
 
 p {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
 }
 
 ul {
-    list-style: url(../assets/icons/divisa-direita.png);
+    color:  #fff;
+    
 }
 
 li {
     font-size: 1.5rem;
+}
+
+b.warning {
+    font-size: 1.5rem;
+    color: red;
 }

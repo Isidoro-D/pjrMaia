@@ -32,7 +32,7 @@ div.titles {
     text-align: center;
     background-color: #45000ed3;
     margin: 4% auto;
-    width: 63%;
+    width: 74%;
     height: 15%;
     --animate-duration: 3s;
     --animate-repeat: 3;
@@ -40,7 +40,7 @@ div.titles {
 
 div.options {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     text-align: center;
     gap: 50px;
@@ -49,19 +49,19 @@ div.options {
 }
 
 .kid,
-.adult {
+.adult, .pregnant {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    width: 30%;
+    width: 23%;
     height: 30vh;
     background-color: #45000ed3;
     transition: all 0.3s ease-in-out;
     object-fit: fill;
 }
 
-.kid:hover, .adult:hover {
+.kid:hover, .adult:hover, .pregnant:hover {
     transform: scale(1.15);
 }
 

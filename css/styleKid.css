@@ -11,6 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     background-size: 150% 100%;
     animation: bg-animated 5s infinite alternate-reverse;
     position: relative;
+    overflow-x: hidden;
 }
 
 @keyframes bg-animated {
@@ -35,6 +37,8 @@ body {
 section {
     max-width: 90vw;
     margin: 0 auto;
+    min-height: 100vh;
+    
 }
 
 div.line {
@@ -46,16 +50,12 @@ div.line {
     text-align: center;
 }
 
-div.container .title {
-    color: #000;
-}
-
 a.back {
     position: fixed;
     right: 2%;
-    bottom: 10%;
+    bottom: 20%;
     padding: 11px 0;
-    background-color: #1f1f1f56;
+    background-color: #cfcdcd56;
     border-radius: 16px;
     text-align: center;
 }
@@ -65,27 +65,50 @@ a.back img {
 }
 
 a.home img {
-    width: 40px;
+    width: 30px;
+    color: #fff;
 }
 
 a.home {
+
     font-size: 1.35rem;
     position: absolute;
     left: 2%;
-    top: 1%;
     text-shadow: 0 2px 6px #272727da;
+    z-index: 100;
+    text-decoration: underline;
+    padding: 10px;
 }
 
 a.next {
+    display: flex;
+    flex-direction: row;
     font-size: 1.35rem;
     position: absolute;
     right: 2%;
-    top: 1%;
     text-shadow: 0 2px 6px #272727da;
+    padding: 10px;
+    gap: 10px;
+    z-index: 100;
+    text-decoration: underline;
 }
 
 a.next img {
-    width: 40px;
+    width: 30px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.5s;
+    transform: translateX(0);
 }
 
 /* --------------------------------------- */
@@ -105,7 +128,7 @@ div.kid {
 
 
 div.divisor {
-    border-inline-end: 2px solid #000;
+    border-inline-end: 2px solid #fff;
     height: 80%;
     width: 50%;
 }
@@ -144,12 +167,14 @@ div.divisor {
     align-items: center;
 }
 
+
+
 /* ---------------------------------- */
 /* ---------- SECTION SAFE ---------- */
 /* ---------------------------------- */
 
 div.divisor_line {
-    border-top: 2px solid var(--bordo);
+    border-top: 2px solid #fff;
     width: 60%;
     margin: 2% auto;
 }
@@ -201,7 +226,7 @@ div.pcrBaby img {
 
 /* ---------------------------------- */
 /* ---------- SECTION DEA ---------- */
-/* ---------------------------------- */
+/* -------------------------------- */
 
 section.dea {
     width: 70%;
@@ -217,4 +242,27 @@ div.guidance {
 
 section.dea div.container img {
     width: 70%;
+}
+
+/* ---------------------------------- */
+/* ---------- FOOTER ---------- */
+/* -------------------------------- */
+
+
+footer {
+    background-color: #1f1f1fd8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 166px;
+}
+
+footer #direitos {
+    font-size: 1.15rem;
+    color: #ffff;
+}
+
+.logo img {
+    position: relative;
+    width: 15%;
 }

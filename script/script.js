@@ -1,3 +1,7 @@
+/* ------------------------- */
+/* ----- SCROLL LENTO ----- */
+/* ----------------------- */
+
 const back = document.querySelector('.back');
 
 back.addEventListener('click', (e) => {
@@ -9,3 +13,21 @@ back.addEventListener('click', (e) => {
     });
 
 });
+
+/* ----------------------------- */
+/* ----- ANIMAÇÃO DO SITE ----- */
+/* --------------------------- */
+
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    })
+})
+
+const elements = document.querySelectorAll('.hidden');
+
+elements.forEach((element)=> myObserver.observe(element));  
