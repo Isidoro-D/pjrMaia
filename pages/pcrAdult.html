@@ -7,6 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/typography.css">
     <link rel="stylesheet" href="../css/styleAdult.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,42 +21,84 @@
 
 <body>
     <div class="line"></div>
-    <main>
-        <div class="buttons">
-            <a class="home" href="../index.html" target="_self" rel="noopener noreferrer"><img
-                    src="../assets/icons/arrows-back.png" alt="seta de voltar">Página principal</a>
-            <a href="./pcrGestantes.html" class="next">PCR Gestantes<img src="../assets/icons/right-arrow.png" alt=""></a>
-        </div>
-        <section class="pcrAdult hidden">
-            <div class="container">
-                <h2 class="title" id="inicio">PCR em Adultos</h2>
-                <span class="inseguro">Local Inseguro</span>
-                <div class="adult">
-                    <div class="icons hidden">
-                        <h3>O que fazer ao encontrar uma pessoa desacordada?</h3>
-                        <img class="fallOver hidden" src="../assets/icons/pessoa_brucos.png" alt="pessoa de bruços">
-                        <h4>Verifique se o local esta seguro</h4>
-                        <img class="danger hidden" src="../assets/icons/situacoes_perigosas.png" alt="Situações Perigosas">
+    <div class="general">
+        <main>
+            <div class="buttons">
+                <a class="home" href="../index.html" target="_self" rel="noopener noreferrer"><img
+                        src="../assets/icons/arrows-back.png" alt="seta de voltar">Página principal</a>
+                <a href="./pcrGestantes.html" class="next">PCR Gestantes<img src="../assets/icons/right-arrow.png"
+                        alt=""></a>
+            </div>
+            <section class="pcrAdult hidden">
+                <div class="containerPages">
+                    <h2 class="title" id="inicio">PCR em Adultos</h2>
+                    <span class="inseguro">Local Inseguro</span>
+                    <div class="adult">
+                        <div class="icons hidden">
+                            <h3>O que fazer ao encontrar uma pessoa desacordada?</h3>
+                            <img class="fallOver hidden" src="../assets/icons/pessoa_brucos.png" alt="pessoa de bruços">
+                            <h4>Verifique se o local esta seguro</h4>
+                            <img class="danger hidden" src="../assets/icons/situacoes_perigosas.png"
+                                alt="Situações Perigosas">
+                        </div>
+
+                        <div class="divisor"></div>
+
+                        <div class="info">
+                            <div class="call hidden">
+                                <img class="pcrAdult_img tel" src="../assets/icons/phone-call_10484800.svg"
+                                    alt="Telefone">
+                                <h3>Chame por ajuda</h3>
+                            </div>
+                            <div class="fireman hidden">
+                                <img class="pcrAdult_img" src="../assets/icons/bombeiro.png" alt="Caminhão de bombeiro">
+                                <a href="tel:+55 193">
+                                    <h3>Bombeiro 193</h3>
+                                </a>
+                            </div>
+                            <div class="police hidden">
+                                <img class="pcrAdult_img" src="../assets/icons/qsv_policia.png"
+                                    alt="Viatura da policia">
+                                <a href="tel:+55 190">
+                                    <h3>Policia 190</h3>
+                                </a>
+                            </div>
+                            <div class="paramedic hidden">
+                                <img class="pcrAdult_img" src="../assets/icons/ambulancia.png" alt="Ambulância">
+                                <a href="tel:+55 192">
+                                    <h3>SAMU 192</h3>
+                                </a>
+                            </div>
+                            <div class="copel hidden">
+                                <img class="pcrAdult_img logoCopel" src="../assets/icons/copel.png" alt="Logo do COPEL">
+                                <a href="tel:+55 0800 51 00 116">
+                                    <h3>Copel 0800 51 00 116</h3>
+                                </a>
+                            </div>
+                            <h3>Aguarde em um lugar seguro</h3>
+                        </div>
                     </div>
+                </div>
+            </section>
+            <a class="back" href="#inicio"><img src="../assets/icons/direita-para-cima.png" alt=""></a>
+        </main>
 
-                    <div class="divisor"></div>
-
-                    <div class="info">
-                        <div class="call hidden">
+        <div class="divisor_line"></div>
+        <section class="safe hidden">
+            <div class="containerPages">
+                <span class="inseguro" style="margin-top: 2%;">Local seguro</span>
+                <div class="adult">
+                    <div class="safeArea hidden">
+                        <p>Verifique a consciência, tentando chamar pelo<br> nome, faça perguntas como "Oi pode me
+                            ouvir?"
+                        </p>
+                        <img class="fallOver hidden" src="../assets/icons/pessoa_desmaiada.png" alt="pessoa de bruços">
+                        <p>caso não tenha resposta realize estímulo doloroso entre dedos das mãos;</p>
+                        <img class="pcrAdult_img estimulos hidden" src="../assets/icons/aperto_na_mao.png"
+                            alt="Estimulos nas mãos">
+                        <div class="call">
                             <img class="pcrAdult_img tel" src="../assets/icons/phone-call_10484800.svg" alt="Telefone">
                             <h3>Chame por ajuda</h3>
-                        </div>
-                        <div class="fireman hidden">
-                            <img class="pcrAdult_img" src="../assets/icons/bombeiro.png" alt="Caminhão de bombeiro">
-                            <a href="tel:+55 193">
-                                <h3>Bombeiro 193</h3>
-                            </a>
-                        </div>
-                        <div class="police hidden">
-                            <img class="pcrAdult_img" src="../assets/icons/qsv_policia.png" alt="Viatura da policia">
-                            <a href="tel:+55 190">
-                                <h3>Policia 190</h3>
-                            </a>
                         </div>
                         <div class="paramedic hidden">
                             <img class="pcrAdult_img" src="../assets/icons/ambulancia.png" alt="Ambulância">
@@ -63,116 +106,93 @@
                                 <h3>SAMU 192</h3>
                             </a>
                         </div>
-                        <div class="copel hidden">
-                            <img class="pcrAdult_img logoCopel" src="../assets/icons/copel.png" alt="Logo do COPEL">
-                            <a href="tel:+55 0800 51 00 116">
-                                <h3>Copel 0800 51 00 116</h3>
-                            </a>
+                    </div>
+
+                    <div class="divisor"></div>
+
+                    <div class="info safeInfo hidden">
+                        <p>Verifique as vias aéreas (nariz e boca) para garantir que nada esteja bloqueando<br> a
+                            passagem
+                            de
+                            ar. Em seguida, observe se há movimentação na região do peito (tórax).</p>
+                        <div class="breath">
+                            <img class="verificationBreath hidden" src="../assets/icons/respiracao_boa_a_boca.png"
+                                alt="Verificando se um adulto está respirando">
+                            <img class="verificationBreath hidden" src="../assets/icons/verificar_respiracao.png"
+                                alt="Verificando se um adulto está respirando">
                         </div>
-                        <h3>Aguarde em um lugar seguro</h3>
+                        <p>Verifique o pulso carotídeo, se caso não houver pulso e respiração, inicie a massagem
+                            cardíaca
+                            (compressões torácicas);</p>
+                        <img class="adultPulse hidden" src="../assets/icons/verificar_pulcacao.png"
+                            alt="Verificando pulsação de uma criança">
                     </div>
                 </div>
+            </div>
+            <div class="divisor_line"></div>
+            <div class="explain hidden">
+                <p>Deite a vítima no chão ou em uma superfície rígida, e inicie a massagem cardíaca (compressões
+                    torácicas)<br> até a chegada do socorro, 100 a 120 compressões por minuto, afundando o tórax cerca
+                    de 4
+                    a 5 cm;</p>
+                <img class="crpAdult hidden" src="../assets/icons/cpr_adulto.png" alt="Primeiros socorros em adulto">
+                <div class="aviso hidden">
+                    <b class="warning">ATENÇÃO !!</b>
+                    <p>Se a vítima for muito<br> emagrecida ou idosa, realizar<br> a massagem com uma mão<br> apenas.
+                    </p>
+                </div>
+                <p>Realize as compressões até o Socorro chegar.</p>
+                <a class="video" href="../assets/videos/pcr_adult .mp4" target="_blank" rel="noopener noreferrer"><img
+                        src="../assets/icons/seguro-de-vida.png" alt="icone do vídeo">Vídeo explicativo</a>
+            </div>
+
+        </section>
+
+        <div class="divisor_line"></div>
+        <section class="dea hidden">
+            <div class="containerPages">
+                <h2 class="title">DEA</h2>
+                <p>O Desfibrilador Externo Automático (DEA) é destinado para reverter uma parada cardiorrespiratória<br>
+                    através da detecção automática de ritmos chocáveis. Ele é capaz de diagnosticar as arritmias
+                    cardíacas<br> e tratá-las através da desfribrilação.</p>
+                <div class="guidance hidden">
+                    <h3>Como utilizar o DEA</h3>
+                    <ul>
+                        <li class="hidden">Antes de usar o desfribrilador, deve se retirar os acessórios de metal que o
+                            paciente esteja
+                            usando;</li>
+                        <li class="hidden">Posicione o DEA próximo à vítima, ligue o aparelho, afaste-se da vítima e
+                            siga as orientações
+                            fornecidas pelo equipamento;</li>
+                        <li class="hidden">O eletrodo direito deve ser colocado abaixo da clavícula direita;</li>
+                        <li class="hidden">O eletrodo esquerdo precisa ficar abaixo do mamilo esquerdo;</li>
+                        <li class="hidden">Após a fixação dos eletrodos, instale o cabo no conector do equipamento e
+                            espere ele analisar o
+                            ritmo cardíaco;</li>
+                        <li class="hidden">Se o choque for indicado, afaste-se da vítima e aperte o botão seguindo as
+                            orientações do DEA, e
+                            então, realize as compressões torácicas;</li>
+                        <li class="hidden">Caso o choque não seja indicado, mantenha a massagem (compressões torácicas)
+                            até a chegada do
+                            socorro;</li>
+                        <li class="hidden">É essencial verificar se a vítima está molhada; se estiver, deve ser seca
+                            antes de iniciar o
+                            procedimento;</li>
+                        <li class="hidden">Não se deve colocar os eletrodos sobre o marcapasso, pois pode haver
+                            interferência nas
+                            informações.</li>
+                    </ul>
+                </div>
+                <img class="hidden" src="../assets/icons/DEA.png" alt="">
             </div>
         </section>
-        <a class="back" href="#inicio"><img src="../assets/icons/direita-para-cima.png" alt=""></a>
-    </main>
-
-    <div class="divisor_line"></div>
-    <section class="safe hidden">
-        <div class="container">
-            <span class="inseguro" style="margin-top: 2%;">Local seguro</span>
-            <div class="adult">
-                <div class="safeArea hidden">
-                    <p>Verifique a consciência, tentando chamar pelo<br> nome, faça perguntas como "Oi pode me ouvir?"
-                    </p>
-                    <img class="fallOver hidden" src="../assets/icons/pessoa_desmaiada.png" alt="pessoa de bruços">
-                    <p>caso não tenha resposta realize estímulo doloroso entre dedos das mãos;</p>
-                    <img class="pcrAdult_img estimulos hidden" src="../assets/icons/aperto_na_mao.png"
-                        alt="Estimulos nas mãos">
-                    <div class="call">
-                        <img class="pcrAdult_img tel" src="../assets/icons/phone-call_10484800.svg" alt="Telefone">
-                        <h3>Chame por ajuda</h3>
-                    </div>
-                    <div class="paramedic hidden">
-                        <img class="pcrAdult_img" src="../assets/icons/ambulancia.png" alt="Ambulância">
-                        <a href="tel:+55 192">
-                            <h3>SAMU 192</h3>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="divisor"></div>
-
-                <div class="info safeInfo hidden">
-                    <p>Verifique as vias aéreas (nariz e boca) para garantir que nada esteja bloqueando<br> a passagem
-                        de
-                        ar. Em seguida, observe se há movimentação na região do peito (tórax).</p>
-                    <div class="breath">
-                        <img class="verificationBreath hidden" src="../assets/icons/respiracao_boa_a_boca.png"
-                            alt="Verificando se um adulto está respirando">
-                        <img class="verificationBreath hidden" src="../assets/icons/verificar_respiracao.png"
-                            alt="Verificando se um adulto está respirando">
-                    </div>
-                    <p>Verifique o pulso carotídeo, se caso não houver pulso e respiração, inicie a massagem cardíaca
-                        (compressões torácicas);</p>
-                    <img class="adultPulse hidden" src="../assets/icons/verificar_pulcacao.png"
-                        alt="Verificando pulsação de uma criança">
-                </div>
-            </div>
-        </div>
-        <div class="divisor_line"></div>
-        <div class="explain hidden">
-            <p>Deite a vítima no chão ou em uma superfície rígida, e inicie a massagem cardíaca (compressões
-                torácicas)<br> até a chegada do socorro, 100 a 120 compressões por minuto, afundando o tórax cerca de 4
-                a 5 cm;</p>
-            <img class="crpAdult hidden" src="../assets/icons/cpr_adulto.png" alt="Primeiros socorros em adulto">
-            <p>Realize as compressões até o Socorro chegar.</p>
-            <a class="video" href="../assets/videos/pcr_adult .mp4" target="_blank" rel="noopener noreferrer"><img
-                    src="../assets/icons/seguro-de-vida.png" alt="icone do vídeo">Vídeo explicativo</a>
-        </div>
-        <div class="aviso hidden">
-            <b class="warning">ATENÇÃO !!</b>
-            <p>Se a vítima for muito<br> emagrecida ou idosa, realizar<br> a massagem com uma mão<br> apenas.</p>
-        </div>
-    </section>
-
-    <div class="divisor_line"></div>
-    <section class="dea hidden">
-        <div class="container">
-            <h2 class="title hidden">DEA</h2>
-            <p>O Desfibrilador Externo Automático (DEA) é destinado para reverter uma parada cardiorrespiratória<br>
-                através da detecção automática de ritmos chocáveis. Ele é capaz de diagnosticar as arritmias
-                cardíacas<br> e tratá-las através da desfribrilação.</p>
-            <div class="guidance hidden">
-                <h3>Como utilizar o DEA</h3>
-                <ul>
-                    <li class="hidden">Antes de usar o desfribrilador, deve se retirar os acessórios de metal que o paciente esteja
-                        usando;</li>
-                    <li class="hidden">Posicione o DEA próximo à vítima, ligue o aparelho, afaste-se da vítima e siga as orientações
-                        fornecidas pelo equipamento;</li>
-                    <li class="hidden">O eletrodo direito deve ser colocado abaixo da clavícula direita;</li>
-                    <li class="hidden">O eletrodo esquerdo precisa ficar abaixo do mamilo esquerdo;</li>
-                    <li class="hidden">Após a fixação dos eletrodos, instale o cabo no conector do equipamento e espere ele analisar o
-                        ritmo cardíaco;</li>
-                    <li class="hidden">Se o choque for indicado, afaste-se da vítima e aperte o botão seguindo as orientações do DEA, e
-                        então, realize as compressões torácicas;</li>
-                    <li class="hidden">Caso o choque não seja indicado, mantenha a massagem (compressões torácicas) até a chegada do
-                        socorro;</li>
-                    <li class="hidden">É essencial verificar se a vítima está molhada; se estiver, deve ser seca antes de iniciar o
-                        procedimento;</li>
-                    <li class="hidden">Não se deve colocar os eletrodos sobre o marcapasso, pois pode haver interferência nas
-                        informações.</li>
-                </ul>
-            </div>
-            <img class="hidden" src="../assets/icons/DEA.png" alt="">
-        </div>
-    </section>
+    </div>
     <footer>
         <div class="logo">
             <img src="../assets/img/SENACPR.png" alt="Logo do Senac PR">
         </div>
         <div id="direitos" class="text-center">
-            <span>© powered by Dev Isidoro.</span>
+            <a href="https://github.com/Isidoro-D" target="_blank"><span>© powered by Dev Isidoro.</span></a>
         </div>
     </footer>
 

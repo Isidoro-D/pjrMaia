@@ -1,0 +1,102 @@
+@media (max-width: 1024px) {
+    /*--------*/
+    /* INDEX */
+    /*------*/
+
+    div.container {
+        display: block;
+    }
+
+    div.titles {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    div.options {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .kidPage,
+    .adultPage,
+    .pregnantPage {
+        width: 65%;
+        height: 100px;
+    }
+
+    footer .logo,
+    #direitos {
+        padding: 0 6%;
+    }
+
+    .logo img {
+        position: relative;
+        width: 30%;
+    }
+
+    /*-----------*/
+    /* TIPOGRAFIA */
+    /*---------*/
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    a.back {
+        right: 2%;
+        bottom: 22%;
+        
+    }
+
+    /*------------*/
+    /* PCR ADULT */
+    /*----------*/
+
+    div.aviso {
+        position: relative;
+        width: 35%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 10%;
+    }
+
+    section.dea div.containerPages img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    div.divisor {
+        display: none;
+    }
+
+    div.kid, div.adult {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    img.crpCrianca {
+        width: 80%;
+    }
+
+    section.dea div.containerPages img {
+        width: 100%;
+    }
+
+    .logo img {
+        position: relative;
+        width: 30%;
+    }
+
+    div.gestante img {
+        margin: -100px 0;
+    }
+}

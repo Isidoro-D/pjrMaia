@@ -14,12 +14,17 @@
 }
 
 body {
-    max-width: 100vw;
-    height: 100%;
     background-image: linear-gradient(90deg, #FFB3C1, #f16e86, #fc6782, #f74061, #C9184A, #A4133C, #800F2F, #590d22);
     background-size: 150% 100%;
     animation: bg-animated 5s infinite alternate-reverse;
     position: relative;
+}
+
+div.general {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 @keyframes bg-animated {
@@ -43,7 +48,7 @@ div.line {
     height: 10px;
 }
 
-.container {
+.containerPages {
     text-align: center;
 }
 
@@ -169,8 +174,8 @@ div.divisor {
 }
 
 /* ---------------------------------- */
-/* ---------- SECTION SAFE ---------- */
-/* ---------------------------------- */
+/* ---------- SECTION SAFE --------- */
+/* -------------------------------- */
 
 div.divisor_line {
     border-top: 2px solid #fff;
@@ -184,12 +189,13 @@ img.estimulos {
 
 img.verificationBreath {
     width: 80%;
-    margin-top: -70px;
 }
 
 img.adultPulse {
     width: 95%;
-    margin-top: -70px;
+}
+img.crpAdult {
+    width: 75%;
 }
 
 div.explain {
@@ -223,8 +229,8 @@ div.aviso {
     width: 20%;
     padding: 20px 0;
     position: absolute;
-    right: 10%;
-    bottom: 30%;
+    right: 6%;
+    bottom: 50%;
     border-radius: 8px;
 }
 
@@ -242,7 +248,8 @@ div.gestante {
 }
 
 div.gestante img {
-    margin: -240px 0;
+    margin: -140px 0;
+    width: 100%;
 }
 
 /* ---------------------------------- */
@@ -261,21 +268,48 @@ div.guidance {
     line-height: 70px;
 }
 
-section.dea div.container img {
+section.dea div.containerPages img {
     width: 70%;
 }
 
+ul:nth-child(2){
+    transition-delay: 200ms;
+}
+ul:nth-child(3){
+    transition-delay: 350ms;
+}
+ul:nth-child(4){
+    transition-delay: 500ms;
+}
+ul:nth-child(5){
+    transition-delay: 650ms;
+}
+ul:nth-child(6){
+    transition-delay: 800ms;
+}
+ul:nth-child(7){
+    transition-delay: 950ms;
+}
+ul:nth-child(8){
+    transition-delay: 1.1s;
+}
+ul:nth-child(9){
+    transition-delay: 1.25s;
+}
+
 /* ---------------------------------- */
-/* ---------- FOOTER ---------- */
+/* ---------- FOOTER --------------- */
 /* -------------------------------- */
 
 
 footer {
     background-color: #1f1f1fd8;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
     align-items: center;
     height: 166px;
+    width: 100%;
 }
 
 footer #direitos {
