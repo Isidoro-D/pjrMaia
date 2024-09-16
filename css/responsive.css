@@ -134,4 +134,12 @@
     #ftIndex {
         height: auto;
     }
+
+    .buttons a {
+        font-size: 1.2rem;
+    }
+
+    .buttons img {
+        display: none;
+    }
 }
