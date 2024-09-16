@@ -33,7 +33,7 @@
 
     .logo img {
         position: relative;
-        width: 30%;
+        width: 50%;
     }
 
     /*-----------*/
@@ -78,6 +78,18 @@
         display: none;
     }
 
+    a.home, a.next {
+        position: relative;
+    }
+
+    div.buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 4%;
+        align-items: center;
+    }
+
     div.kid, div.adult {
         display: grid;
         grid-template-columns: 1fr;
@@ -91,12 +103,35 @@
         width: 100%;
     }
 
+    ul li {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+
     .logo img {
         position: relative;
-        width: 30%;
+        width: 50%;
     }
 
     div.gestante img {
-        margin: -100px 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) { 
+
+    div.titles {
+        height: 35%;
+        margin: 0 auto;
+    }
+    .kidPage, .adultPage, .pregnantPage {
+        width: 65%;
+        height: 100px;
+    }
+
+    #ftIndex {
+        height: auto;
     }
 }
